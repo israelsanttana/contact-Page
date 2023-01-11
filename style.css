@@ -1,4 +1,3 @@
-/* geral*/
 * {
   margin: 0;
   padding: 0;
@@ -6,48 +5,43 @@
   box-sizing: border-box;
 }
 
-/* Containers*/
-
-#main-container {
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
 }
 
-#address-container,
-#form-container {
-  flex: 1 1 0;
-  height: 100%;
-  text-align: center;
+#main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
 }
 
 /* Address Container */
 
 #address-container {
+  width: 100%;
+  max-width: 600px;
   background-image: url(./dmitrii-vaccinium-9qsK2QHidmg-unsplash.jpg);
   background-size: cover;
   color: #fff;
-  position: relative;
-}
-
-.fade {
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #address-content {
-  position: absolute;
-  top: 25vh;
-  left: 30%;
-  width: 300px;
+  width: 100%;
+  height: auto;
 }
 
 #address-content h2 {
-  color: rgb(235, 188, 100);
-  font-weight: 300;
-  margin-bottom: 15px;
+  color: #fca311;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-shadow: 0.1em 0.1em 0.2em rgb(95, 93, 93);
 }
 
 #address-content ion-icon {
@@ -57,36 +51,43 @@
 }
 
 #address-content p {
-  font-weight: 300;
-  margin-bottom: 80px;
+  font-weight: 600;
+  margin-bottom: 8rem;
+  text-shadow: 0.1em 0.1em 0.2em rgb(95, 93, 93);
 }
 
 /* Form Container */
 
 #form-container {
-  padding-top: 60px;
-  text-align: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #form-container h2 {
   color: #888;
-  margin-bottom: 50px;
-  font-size: 30px;
+  margin-bottom: 5rem;
+  font-size: 3rem;
   font-weight: 300;
+  padding: 2rem;
+  text-align: center;
 }
 
 #contact-form {
-  width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  max-width: 560px;
   text-align: left;
+  padding: 2rem;
 }
 
 #contact-form input,
 #contact-form label,
 #contact-form textarea {
   display: block;
-  padding: 10px;
+  padding: 1rem;
   border: 1px solid #eee;
   width: 100%;
   color: #aaa;
@@ -99,7 +100,7 @@
 }
 
 #contact-form input {
-  margin-bottom: 50px;
+  margin-bottom: 4rem;
 }
 
 #contact-form input::placeholder,
@@ -108,15 +109,16 @@
 }
 
 #contact-form input[type="submit"] {
+  width: 100%;
+  height: auto;
   background-color: rgb(235, 188, 100);
   color: #fff;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: bold;
   cursor: pointer;
-  width: 300px;
-  margin: 30px auto;
   border: 2px solid;
   transition: 0;
+  margin-top: 4rem;
 }
 
 #contact-form input[type="submit"]:hover {
@@ -127,7 +129,16 @@
 
 /* Responsive */
 
-@media (max-width: 450px) {
+@media (max-width: 697px) {
+  .form-container {
+    font-size: 50%;
+  }
+  .form-container h2 {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 620px) {
   #main-container {
     height: 100%;
     flex-wrap: wrap;
@@ -140,11 +151,11 @@
 
   #form-container {
     order: -1;
-    padding: 20px;
+    padding: 2rem;
   }
 
   #form-container h2 {
-    margin-bottom: 25px;
+    margin-bottom: 2.5rem;
   }
 
   #contact-form {
