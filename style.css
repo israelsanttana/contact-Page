@@ -23,6 +23,7 @@ body {
 #address-container {
   width: 100%;
   max-width: 800px;
+  height: auto;
   background-image: url(./dmitrii-vaccinium-9qsK2QHidmg-unsplash.jpg);
   background-size: cover;
   color: #fff;
