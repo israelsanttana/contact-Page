@@ -22,7 +22,7 @@ body {
 
 #address-container {
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   background-image: url(./dmitrii-vaccinium-9qsK2QHidmg-unsplash.jpg);
   background-size: cover;
   color: #fff;
@@ -38,7 +38,7 @@ body {
 }
 
 #address-content h2 {
-  color: #fca311;
+  color: rgb(235, 188, 100);
   font-weight: 600;
   margin-bottom: 1.5rem;
   text-shadow: 0.1em 0.1em 0.2em rgb(95, 93, 93);
